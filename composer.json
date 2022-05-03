@@ -1,0 +1,15 @@
+{
+    "name": "xentral/simple-service",
+    "autoload": {
+        "psr-4": {
+            "Xentral\\SimpleService\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bambamboole",
+            "email": "manuel.christlieb@xentral.com"
+        }
+    ],
+    "require": {}
+}

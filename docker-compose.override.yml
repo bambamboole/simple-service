@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  nginx:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.simple-service.rule=Host(`simple-service.xentral.test`)"
+      - "traefik.http.routers.simple-service.tls=true"
+    networks:
+      default:
+      traefik:
+
+networks:
+  default:
+  traefik:
+    external: true
